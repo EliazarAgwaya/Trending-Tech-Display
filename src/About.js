@@ -1,8 +1,14 @@
 import React from "react"
+import NavBar from "./NavBar"
 
 function About () {
     return (
         <div className="about">
+            <div className="nav-container">
+             <div className="nav">
+                <NavBar/>
+             </div>
+            </div>
             <h1>About Us</h1>
             <div className="float-image">
                 <div className="header4">
