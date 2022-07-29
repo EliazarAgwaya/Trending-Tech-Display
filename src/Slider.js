@@ -1,7 +1,8 @@
 import React, {useState} from "react"
 
 function Slider () {
- 
+    const [currentIndex, setCurrentIndex] = useState(0)
+
     const slides=[
         {url: "https://blogs.iadb.org/integration-trade/wp-content/uploads/sites/13/2021/12/Telemedicina_Blog_BLOG_HEADER.png", title: "Telemedicine"},
         {url: "https://builtin.com/sites/www.builtin.com/files/styles/ckeditor_optimize/public/inline-images/transportation-technology-pillar-page-overview_0.jpeg", title: "Transport"},
@@ -14,11 +15,25 @@ function Slider () {
         {url: "https://d1jbg4la8qhw2x.cloudfront.net/wp-content/uploads/2020/02/Skills.-ICT.-IOT..jpg", title: "Communication"}
     ]
 
+    const sliderStyles={
+        height: "100%",
+        position: "relative"
+    }
+
+    const slideStyles={
+        width: "100%",
+        height: "80%",
+        borderRadius: "10px",
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+        backgroundImage: `url(${slides[currentIndex].url})`
+    }
+
     return (
-        <div>
+        <div style={sliderStyles}>
             <div className="left">Prev</div>
             <div className="right">Next</div>
-            <div></div>
+            <div style={slideStyles}></div>
             <div></div>
         </div>
     )
