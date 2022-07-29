@@ -1,6 +1,6 @@
 import React, {useState} from "react"
 
-function AddTechForm ({onAddTech}) {
+function AddTrendForm ({onAddTech}) {
     const [formData, setFormData] = useState({
         title: "", description: "", category: "", image: ""
 
@@ -47,4 +47,4 @@ function AddTechForm ({onAddTech}) {
         </div>
     )
 }
-export default AddTechForm 
+export default AddTrendForm 
