@@ -1,0 +1,46 @@
+{
+    "techology": [
+      {
+        "id": 1,
+        "title": "Bioenergy",
+        "description": "Energy derived from biomass or biofuel has the potential to generate far more of the power used by human society than it does today, and in recent years we have seen a strong trend towards attempting to unlock this potential.",
+        "category": "Energy",
+        "image": "https://cdn1.vogel.de/unsafe/800x0/smart/images.vogel.de/vogelonline/bdb/773800/773814/original.jpg"
+      },
+      {
+        "id": 2,
+        "title": "Telemedicine",
+        "description": "To deliver this, new generation wearable technologies are equipped with heart rate, stress, and blood oxygen detectors, enabling healthcare professionals to accurately monitor vital signs in real-time",
+        "category": "Medicine",
+        "image": "https://www.netscribes.com/wp-content/uploads/2020/12/telemedicine_technology_blog_image.jpg"
+      },
+      {
+        "id": 3,
+        "title": "Autonomous vehicles",
+        "description": "Reducing the need for human input into driving, delivery, and warehousing offers the potential for significant cost reduction and asset optimization.",
+        "category": "Transport",
+        "image": "https://www.automotiveplastics.com/wp-content/uploads/Redundant-Safety-iStock-872673304.jpg"
+      },
+      {
+        "title": "Artificial Intelligence",
+        "description": "Artificial intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think like humans and mimic their actions. The term may also be applied to any machine that exhibits traits associated with a human mind such as learning and problem-solving.",
+        "category": "Computer",
+        "image": "https://bernardmarr.com/wp-content/uploads/2021/12/Future-Developments-of-AI.jpg",
+        "id": 4
+      },
+      {
+        "title": "Robotics",
+        "description": "Robotics significantly help to improve safety. For instance, remotely controlled, wireless underground cable cutters can be used instead of putting humans at life-threatening risk.",
+        "category": "Electrical",
+        "image": "https://www.hyundaimotorgroup.com/image/upload/asset_library/MDA00000000000013073/298d7f30b2f84ab1b2ece190fe98f668.jpg",
+        "id": 5
+      },
+      {
+        "title": "The Internet of Things (IoT)",
+        "description": "IoT impacts many different areas of the electrical engineering landscape. From smart grids to smart lighting and Visible Light Communication (VLC), among many others, IoT is now intertangled with the electrical engineering industry. As a result, it’s now imperative that every electrical engineer becomes “IoT literate.”\n\nApart from the smart grid benefits like monitoring, distribution and automation implemented in electrical utilities, IoT applications in the field of electrical energy also include smart inverters, advanced metering infrastructure (AMI), remote control operation of energy-consuming devices and SCADA (supervisory control and data acquisition.)",
+        "category": "Electrical",
+        "image": "https://images.squarespace-cdn.com/content/v1/55181a36e4b05c72e7f6a2a3/1644641466966-XP7PGG3G9TDHE49KB15Y/examples-of-IoT.png",
+        "id": 6
+      }    
+    ]
+  }
