@@ -34,13 +34,6 @@
         "category": "Electrical",
         "image": "https://www.hyundaimotorgroup.com/image/upload/asset_library/MDA00000000000013073/298d7f30b2f84ab1b2ece190fe98f668.jpg",
         "id": 5
-      },
-      {
-        "title": "The Internet of Things (IoT)",
-        "description": "IoT impacts many different areas of the electrical engineering landscape. From smart grids to smart lighting and Visible Light Communication (VLC), among many others, IoT is now intertangled with the electrical engineering industry. As a result, it’s now imperative that every electrical engineer becomes “IoT literate.”\n\nApart from the smart grid benefits like monitoring, distribution and automation implemented in electrical utilities, IoT applications in the field of electrical energy also include smart inverters, advanced metering infrastructure (AMI), remote control operation of energy-consuming devices and SCADA (supervisory control and data acquisition.)",
-        "category": "Electrical",
-        "image": "https://images.squarespace-cdn.com/content/v1/55181a36e4b05c72e7f6a2a3/1644641466966-XP7PGG3G9TDHE49KB15Y/examples-of-IoT.png",
-        "id": 6
-      }    
+      }  
     ]
-  }
+  }                   
