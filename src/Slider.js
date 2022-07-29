@@ -85,6 +85,10 @@ function Slider () {
         setCurrentIndex(newIndex)
     }
 
+    function goToSlide (index) {
+        setCurrentIndex(index)
+    }
+
     return (
         <div style={sliderStyles}>
             <div className="left" style={leftArrow} onClick={previous}>Prev</div>
@@ -92,7 +96,7 @@ function Slider () {
             <div style={slideStyles}></div>
             <div style={dotsContainer}>
                 {slides.map((slide, index) => (
-                        <div className="dots" key={index} style={dotStyles}>.</div>
+                        <div className="dots" key={index} style={dotStyles} onClick={() => goToSlide(index)}>.</div>
                     ))} 
             </div>
         </div>
