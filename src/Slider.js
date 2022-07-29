@@ -29,10 +29,40 @@ function Slider () {
         backgroundImage: `url(${slides[currentIndex].url})`
     }
 
+    const rightArrow ={
+        position: "absolute",
+        top: "50%",
+        transform: "translate(0, -50)",
+        right: "50px",
+        fontSize: "34px",
+        color: "white",
+        zIndex: 1,
+        cursor: "pointer",
+        background: "black",
+        width: "90px",
+        borderRadius: "10px"
+
+    }
+
+    const leftArrow ={
+        position: "absolute",
+        top: "50%",
+        transform: "translate(0, -50)",
+        left: "50px",
+        fontSize: "34px",
+        color: "white",
+        zIndex: 1,
+        cursor: "pointer",
+        background: "black",
+        width: "90px",
+        borderRadius: "10px"
+
+    }
+
     return (
         <div style={sliderStyles}>
-            <div className="left">Prev</div>
-            <div className="right">Next</div>
+            <div className="left" style={leftArrow}>Prev</div>
+            <div className="right" style={rightArrow}>Next</div>
             <div style={slideStyles}></div>
             <div></div>
         </div>
