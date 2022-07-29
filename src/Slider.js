@@ -73,10 +73,22 @@ function Slider () {
         color: "blue"
     }
 
+    function previous(){
+        const isFirstSlide = currentIndex=== 0;
+        const newIndex=isFirstSlide ? slides.length - 1 : currentIndex - 1;
+        setCurrentIndex(newIndex)
+    }
+
+    function next(){
+        const isLastSlide = currentIndex=== slides.length - 1;
+        const newIndex=isLastSlide ? 0 : currentIndex + 1;
+        setCurrentIndex(newIndex)
+    }
+
     return (
         <div style={sliderStyles}>
-            <div className="left" style={leftArrow}>Prev</div>
-            <div className="right" style={rightArrow}>Next</div>
+            <div className="left" style={leftArrow} onClick={previous}>Prev</div>
+            <div className="right" style={rightArrow} onClick={next}>Next</div>
             <div style={slideStyles}></div>
             <div style={dotsContainer}>
                 {slides.map((slide, index) => (
