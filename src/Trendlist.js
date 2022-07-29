@@ -2,6 +2,18 @@ import React,{useState, useEffect} from "react"
 
 function TrendList () {
   const [technology, setTechnology] = useState([]);
+  const [likes, setLikes] = useState(0)
+  const [isFavorite, setIsFavorite] = useState(false)
+
+  function toggleFavorite() {
+    setIsFavorite((isFavorite) => !isFavorite)
+  }
+  let icon=!isFavorite? "https://www.pngall.com/wp-content/uploads/5/Like-Button-PNG-Image-File.png" : "https://i.pinimg.com/originals/96/a2/71/96a27139e8352b383677452d7dd6edd2.jpg"
+  
+
+  function handleClickLike (e) {
+    setLikes((prevLikes) => prevLikes + 1)
+  }
 
  useEffect(() => {
   fetch ("http://localhost:8000/techology")
@@ -18,6 +30,8 @@ function TrendList () {
                 <p>{item.description}</p>
               </div>
               <img src={item.image} alt="Trending Tech Display Photos"/></div>
+              <div key ={item.id} onClick={handleClickLike} className="image"><img src={icon} alt="Icon" onClick={toggleFavorite}/></div>
+              <h5>{likes} Likes</h5>
             </div>
         )
     })
