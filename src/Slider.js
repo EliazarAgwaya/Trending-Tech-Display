@@ -59,12 +59,30 @@ function Slider () {
 
     }
 
+    const dotsContainer ={
+        display: "flex",
+        justifyContent: "center"
+    }
+
+    const dotStyles = {
+        margin: "0 3px",
+        marginBottom: "40px",
+        marginTop: "0px",
+        cursor: "pointer",
+        fontSize: "75px",
+        color: "blue"
+    }
+
     return (
         <div style={sliderStyles}>
             <div className="left" style={leftArrow}>Prev</div>
             <div className="right" style={rightArrow}>Next</div>
             <div style={slideStyles}></div>
-            <div></div>
+            <div style={dotsContainer}>
+                {slides.map((slide, index) => (
+                        <div className="dots" key={index} style={dotStyles}>.</div>
+                    ))} 
+            </div>
         </div>
     )
 }
