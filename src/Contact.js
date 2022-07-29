@@ -1,8 +1,14 @@
 import React from "react"
+import NavBar from "./NavBar"
 
 function Contact () {
     return (
         <div className="container">
+            <div className="nav-container">
+             <div className="nav">
+                <NavBar/>
+             </div>
+            </div>
            <div className="contact">
             <h2> CONTACT US!</h2>
                 <h5>Any inqury?</h5>
