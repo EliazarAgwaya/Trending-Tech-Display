@@ -1,4 +1,6 @@
 import React,{useState, useEffect} from "react"
+import AddTechForm from "./AddTechForm";
+import NavBar from "./NavBar";
 
 function TrendList () {
   const [technology, setTechnology] = useState([]);
@@ -47,7 +49,8 @@ function TrendList () {
         <div className="trendlist">
          <div className="nav-container">
           <div className="nav">
-           </div>
+          <NavBar/>
+            </div>
          </div>
           <h1>Trends in Technology</h1>
           <button className="add-trend" onClick={handleShowForm}>{showForm ? "Add Trend" : "Hide Form"}</button>
